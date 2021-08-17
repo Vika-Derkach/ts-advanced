@@ -59,4 +59,19 @@ console.log(numbers.items);
 const objs = new Collection([{ a: 1 }, { b: 4 }]);
 objs.remove({ a: 1 });
 console.log(objs.items);
+function createAndValidateCar(model, year) {
+    const car = {};
+    if (model.length > 3) {
+        car.model = model;
+    }
+    if (year > 2000) {
+        car.year = year;
+    }
+    return car;
+}
+const coolCars = ["Ford", "Audi"];
+const ford = {
+    model: "Ford",
+    year: 3034,
+};
 //# sourceMappingURL=generic.js.map
